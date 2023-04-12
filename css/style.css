@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+body  {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://4kwallpapers.com/images/wallpapers/grass-field-green-grass-farmland-sunset-orange-landscape-2880x1800-2509.jpg);
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    text-align: center;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content {
+    margin: 60px 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-content h1,.chk {
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    padding-top: 250px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.chk{
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.add{
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 70px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ava{
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title {
+    padding-top: 50px;
+}
+
+.container {
+    position: relative;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    flex-wrap: wrap;
+}
+
+.container .dis {
+    display: flex;
+}
+
+.bt-sec {
+    padding-top: 25px;
+}
+
+.bt {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    width: 20%;
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.bt:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.options{
+    color: white;
+}
+
+.options:hover{
+    color:#FECB2E;
+}
+
+.searchBox{
+    width: 30%;
+    border: 0px;
+    height: 45px;
+    padding: 15px;
+    border-radius: 10px 0px 0px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.searchBtn{
+    width: 5%;
+    border: 0px;
+    height: 46px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #000000;
+    margin-left: -2px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.searchBox:hover{
+    background-color: #f7f7f7;
+    transition: background-color 0.5s ease;
+}
+
+.searchBtn:hover{
+    background-color: #000000;
+    transform: scale(1.1);
+    transition: background-color 0.5s ease;
+}
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    width: 425px;
+    height: 375px;
+  }
+  .carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.searchBox:focus{
+    background-color: #f7f7f7;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+table {
+    width: 100%;border-collapse: collapse;
+}
+.instructionText{
+    color: white;
+    font-family: 'Ubuntu';
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #ffffff; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.cardstyle{
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    min-height: 200px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.20), 0 3px 6px rgba(0,0,0,0.23);
+    display: none;
+}
+.cardstyle t
+.fixedcardstyle{
+    width: 40%;
+    background-color: white;
+    padding: 10px;
+    min-height: 150px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.20), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.mycardstyle{
+    margin-top: 30px;
+    width: 45%;
+    background-color: transparent;
+    padding-left: 10px; padding-left: 10px;
+    padding-top: 0px; padding-bottom: 25px;
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease;
+    z-index: 11;
+}
+
+
+.rolebtn{
+    background-color: #147EFB;
+    padding: 10px;
+    border: 0px;
+    height: 46px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.rolebtn:hover{
+    background-color: #1279e0;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.30);
+}
+.formbtn{
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    width: 20%;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 25px;
+}
+
+.formbtn:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.30);
+}
+
+.forminput,.formselect{
+    width: 80%;
+    background-color: white;
+    border: 1px solid;
+    border-color: #EAEAEA;
+    height: 30px;
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.forminput:focus{
+    background-color: #FCFCFC;
+    border-color:#000000;
+    transition: background-color 0.5s ease;
+}
+
+.formselect{
+    width: 80%;
+    border: 1px solid;
+    border-color: #EAEAEA;
+    height: 35px;
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.formselect:hover{
+    background-color: #FCFCFC;
+    border-color:#5FC9F8;
+    transition: background-color 0.5s ease;
+    transition: border-color 0.5s ease;
+}
+.formselect:focus{
+    background-color: #FCFCFC;
+    border-color:#147EFB;
+    transition: background-color 0.5s ease;
+} 
+
+.formlabel{
+    width: 80%;
+    text-align: left;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .searchBox{
+        width: 80%;
+    }
+    .searchBtn{
+        width: 10%;
+    }
+    .cardstyle{
+        width: 90%;
+    }
+    .fixedcardstyle{
+        width: 90%;
+    }
+    .mycardstyle{
+        width: 90%;
+    }
+    .alertcontent {
+        width: 90%;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 7px 7px 7px 7px;
+    }
+}
+
+.un{
+    margin: 8px 5px;
+}
+
+.nav-link, .un{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff !important;
+    margin-right: 5px; margin-left: 5px;
+    font-size: large;
+}
+
+.nav-link:hover{
+    color: white !important;
+    font-size:larger;
+}
+
+.cardbtnarea{
+    padding: 20px; 
+}
+.formitem{
+    padding-top: 5px;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+.customalert{
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 150%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.alertcontent {
+  width: 60%;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 7px 7px 7px 7px;
+}
+.alertcontent button{
+    color:#000000;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main section {
+    min-width: 250px;
+    max-width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+main img {
+    box-shadow: 0 0 10px 5px #666;
+}
+
+main form {
+    padding: 25px 0 50px 0;
+    text-align: left;
+}
+
+main form label {
+    display: block;
+    margin-top: 10px;
+    color: #444;
+    font-weight: bold;
+}
+
+main form input,
+main form select {
+    width: 100%;
+}
+
+main form input:invalid {
+    outline: 2px solid #f00;
+    color: #f00;
+}
+
+.qrbutton{
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    font-size: 20px;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.qrbutton:hover{
+    transform: scale(1.1);
+    transition: color 0.5s ease;
+}
+
+.qrbutton2{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    font-size: 13px;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.qrbutton2:hover{
+    transform: scale(1.1);
+    transition: color 0.5s ease;
+}
+
+.navigationlink{
+    padding-top: 5px; padding-bottom: 5px;
+    padding-left: 15px; padding-right: 25px;
+    font-size: 20px; font-family:'Ubuntu';
+    color: white;
+}
+.navigationlink:hover{
+    color: #FECB2E;
+}
+
+
+.navigator{
+    text-align: right;
+    padding: 5px;
+}
+
+.loginformcard{
+    background-color: transparent;
+    margin: 20px; padding: 100px;
+    width: 60%;
+    z-index: 20;
+}
+.ever{
+    background-color: transparent;
+    margin-left: 370px;
+    padding: 100px;
+    width: 60%;
+    z-index: 20;
+    color: white;
+}
+.ever .t{
+    font-size: 300px;
+}
+.loginformcard h4,label{
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .loginformcard{
+        width: 85%;
+    }
+}
+
+#maincard2, #maincard3{
+    display: none;
+}
+
+.greybackground{
+    background-color: #ffffff;
+}
+.greyarea{
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: transparent;
+}
+
+.hl{
+    color: white;
+}
+
+.hl:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
